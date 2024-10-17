@@ -1,0 +1,55 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+    <h2>Hey there, Welcome to My Portfolio</h2>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Vijay CK! I'm a budding developer passionate about web technologies. I love diving into coding and creating simple yet effective web applications. As a recent enthusiast in this field, I’m excited to learn, grow, and take on new challenges. I look forward to exploring opportunities where I can contribute and collaborate with others!.</p>
+</section>
+
+<!-- Blog Section Starts Here -->
+<section id="blog">
+    <h2>Blog</h2>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt }}</p>
+            <small>{{ post.date | date: "%B %d, %Y" }}</small>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+<!-- Blog Section Ends Here -->
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Project Title 1</h3>
+        <p>Description of your project goes here.</p>
+    </div>
+    <div class="project">
+        <h3>Project Title 2</h3>
+        <p>Description of your project goes here.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:vijay_ck@outlook.com">vijay_ck@outlook.com</a></p>
+</section>
