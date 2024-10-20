@@ -24,6 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
  "A portfolio showcasing my projects and journey as a developer."
 baseurl: "/my-jekyll-portfolio" 
 url: "https://vijay-x-ck.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /blog/:title/
+
 twitter_username: jekyllrb
 github_username:  vijay-x-ck
 
